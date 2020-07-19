@@ -56,8 +56,6 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_objs_server.sqf";
 
-execVM "scripts\reset_campo_correr.sqf";
-
 if (call MIV_fnc_isLogSystemEnabled) then {
   execVM "scripts\db\init_log_system.sqf";
 };

@@ -2,17 +2,23 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-if (!(getMissionConfigValue ["ENABLE_LOG_SYSTEM", 0] == 1)) exitWith { };
+_strData = _this;
 
-private _count = 0;
+if (!(getMissionConfigValue ["DEBUG", 0] == 1)) exitWith { };
 
-while { _count < 5000} do {
-	[allPlayers, "info"] execVM "scripts\db\querys\write_log.sqf";
-	_count = _count + 1;
-	sleep 120;
+private _data = "";
+
+if (typeName _strData != "ARRAY") then {
+    _strData = [_strData];
 };
 
-execVM "scripts\db\cron.sqf";
+_strData = _strData apply {if (typeName _x != "STRING") then { str _x } else { _x }};
+
+{
+	_data = _data + " " + _x;
+} forEach _strData;
+
+_data call BIS_fnc_log;
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

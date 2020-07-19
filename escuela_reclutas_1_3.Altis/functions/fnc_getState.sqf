@@ -2,7 +2,15 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-player setVariable ["Saved_Loadout", getUnitLoadout player];
+params [["_unit", player]];
+
+private _state = "alive"; 
+ 
+if (!(alive _unit) || _unit getvariable ["ACE_isUnconscious", false]) then { 
+ _state = "kia"; 
+}; 
+
+_state;
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

@@ -1,38 +1,34 @@
 /*******************************************************************************
                           Realizado por |ArgA|MIV
 *******************************************************************************/
-
-if (!(getMissionConfigValue ["ENABLE_LOG_SYSTEM", 0] == 1)) exitWith { };
-
-private _query = _this;
+if (!(call MIV_fnc_isLogSystemEnabled)) exitWith { };
 
 // Llamamos a la db
 call MIV_fnc_oo_extdb3;
+
+//sleep 2;
 
 private _extdb3 = "new" call OO_EXTDB3;
 ["setIniSectionDatabase", "Database"] call _extdb3;
 ["setDatabaseName", "arga-log"] call _extdb3;
 ["setQueryType", "SQL"] call _extdb3;
-"connect" call _extdb3;
+_result = "connect" call _extdb3;
+// [format ["CONNECTION: %1", str _result]] call MIV_fnc_log;
 /////////////////////
 
-private ["_result", "_response"];
+private _query = "SELECT code, name, id FROM role;";
 
-if (typeName _query == "ARRAY") then {
-    _result = [];
-    {
-        ["QUERY:", _x] call MIV_fnc_log;
-        _response = ["executeQuery", _x] call _extdb3;
-        ["RESULT", _response] call MIV_fnc_log;
-        _result pushBack _response;
-    } forEach _query;
-} else {
-    ["QUERY:", _query] call MIV_fnc_log;
-    _result = ["executeQuery", _query] call _extdb3;
-    ["RESULT:", _result] call MIV_fnc_log;
-};
+private _roleList = ["executeQuery", _query] call _extdb3;
 
-_result;
+// [format ["ROLE_LIST: %1", str _roleList]] call MIV_fnc_log;
+
+private _query = "SELECT role.code, alt.name, alt.id FROM role_alternative_name as alt LEFT JOIN role as role on alt.role_id = role.id;";
+
+private _alternativeList = ["executeQuery", _query] call _extdb3;
+
+// [format ["ALT LIST: %1", str _alternativeList]] call MIV_fnc_log;
+
+(_roleList + _alternativeList);
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

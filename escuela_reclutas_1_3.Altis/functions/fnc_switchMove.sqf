@@ -1,9 +1,10 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-player setVariable ["Saved_Loadout", getUnitLoadout player];
+params["_object","_anim"];
+_object switchMove _anim;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/

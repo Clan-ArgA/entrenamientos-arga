@@ -1,27 +1,17 @@
-/*******************************************************************************
-                          Realizado por |ArgA|MandI
-*******************************************************************************/
+﻿#define NAME Campo para Reclutas ArgA
+#define VERSION v1.3
+#define IMAGE "imgs\portada.jpg"
+#define DESCRIPTION "Sección Reclutas"
 
-#define NAME "Mapa de Entrenamiento ArgA"
-#define COMPLETE_NAME "Mapa de Entrenamiento ArgA 6.1"
-#define IMAGE "imgs\portada.paa"
-#define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
-
-author = "Maxi e Ignacio";
-onLoadName = NAME;
-briefingName = COMPLETE_NAME;
-onLoadMission = DESCRIPTION;
-overviewText = DESCRIPTION;
-overviewPicture = IMAGE;
-loadScreen = IMAGE;
+author = "Axel, Shaggy";
 IMG_LOGO = "imgs\logo.paa";
 COLOR_AUTOR = "#76a8f7";
 ES_CAMPANIA = 0;
 NOMBRE_CAMPANIA = "";
-INTRO = 3;
-MAX_DIST_VISION = 4000;
-DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;
-CURATOR_WHITELIST = ["|ArgA|Ignacio|", "|ArgA|Maxi|", "|Sgt", "|Cpt", "|Tte", "|Cmd", "instructor", "subinstructor"];
+INTRO = 2;
+MAX_DIST_VISION = 5000;
+DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 0;
+CURATOR_WHITELIST = ["|ArgA|Axel|", "|ArgA|Shaggy|", "|Sgt", "|Cpt", "|Tte", "|Cmd"];
 DEBUG = 1;                                  // Habilita el modo debug
 ENABLE_LOG_SYSTEM = 1;                      // Habilita el sistema de log
 ENABLE_LOG_SYSTEM_ONLY_DEDICATED = 1;       // Habilita el sistema de log sólo si el servidor es dedicado (requiere ENABLE_LOG_SYSTEM = 1)
@@ -64,8 +54,8 @@ ENEMIGOS = [""];
 
 //IA - CONFIGURACION
 DESACTIVAR_IA_DE_GRUPO = 1; // 0 Permite la IA del Grupo de los jugadores, 1 la desactiva.
-DESACTIVAR_TODO_BLUFOR = 1; // 0 Permite la IA del Blufor, 1 la desactiva.
-DIFICULTAD_IA_PERSONALIZADA = 0;
+DESACTIVAR_TODO_BLUFOR = 0; // 0 Permite la IA del Blufor, 1 la desactiva.
+DIFICULTAD_IA_PERSONALIZADA = 1;
 AIMING_ACCURACY = 0.01; //precision de apuntado
 AIMING_SHAKE = 0.99; 	//dispersión de apuntado
 AIMING_SPEED = 0.1; 	//velocidad de apuntado
@@ -75,6 +65,14 @@ COURAGE = 0.25; 		//coraje
 RELOAD_SPEED = 0.25; 	//velocidad de recarga
 COMMANDING = 0.75; 		//liderazgo
 ////////////////////////////////////////////////////////////////////////////////
+
+/* Modificar desde los define arriba de todo, no tocar directamente */
+onLoadName = NAME;	                        // Nombre de carga
+briefingName = NAME VERSION;                // Nombre en briefing
+onLoadMission = DESCRIPTION;                // Pie de carga
+overviewText = DESCRIPTION;                 // Pie en seleccion de mision
+overviewPicture = IMAGE;                    // Imagen en seleccion de mision
+loadScreen = IMAGE;                         // Imagen en carga
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI
