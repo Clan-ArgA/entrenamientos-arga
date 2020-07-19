@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Mapa de Entrenamiento ArgA"
-#define COMPLETE_NAME "Mapa de Entrenamiento ArgA 6.1"
+#define COMPLETE_NAME "Mapa de Entrenamiento ArgA 6.2"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
