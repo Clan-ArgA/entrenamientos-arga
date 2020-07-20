@@ -1,5 +1,5 @@
 ﻿#define NAME Campo para Reclutas ArgA
-#define VERSION v1.3
+#define VERSION v1.4
 #define IMAGE "imgs\portada.jpg"
 #define DESCRIPTION "Sección Reclutas"
 

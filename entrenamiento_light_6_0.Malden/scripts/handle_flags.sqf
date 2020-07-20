@@ -7,7 +7,7 @@ params [["_allFlags", []]];
 {
 	private _type = _x getVariable ["MANDI_FLAG_TYPE", "None"];
 	if (_type == "ARG") then {
-		_x setFlagTexture "imgs\bandera.paa";
+		_x forceFlagTexture "imgs\bandera.paa";
 		_x addAction ["<t color='#819FF7'>Himno</t> <t color='#FFFFFF'>nacional</t> <t color='#819FF7'>argentino</t>", {
 			params ["_target", "_caller", "_actionId", "_arguments"];
 			if (!isPlayingAnthem) then {
@@ -19,10 +19,10 @@ params [["_allFlags", []]];
 				isPlayingAnthem = false;
 				publicVariable "isPlayingAnthem";
 			};
-		}];
+		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 	};
 	if (_type == "ARGA") then {
-		_x setFlagTexture "imgs\arga.paa";
+		_x forceFlagTexture "imgs\arga.paa";
 		_x addAction ["<t color='#4aba7b'>Tocar trompeta</t>", {
 			params ["_target", "_caller", "_actionId", "_arguments"];
 			if (!isPlayingTrumpet) then {
@@ -34,7 +34,7 @@ params [["_allFlags", []]];
 				isPlayingTrumpet = false;
 				publicVariable "isPlayingTrumpet";
 			};
-		}];
+		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 	};
 } forEach _allFlags;
 

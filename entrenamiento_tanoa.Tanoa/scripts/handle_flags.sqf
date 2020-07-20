@@ -19,7 +19,7 @@ params [["_allFlags", []]];
 				isPlayingAnthem = false;
 				publicVariable "isPlayingAnthem";
 			};
-		}, nil ,1.5, true, true, "", "true", 2, false, "", ""];
+		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 	};
 	if (_type == "ARGA") then {
 		_x forceFlagTexture "imgs\arga.paa";
@@ -34,7 +34,7 @@ params [["_allFlags", []]];
 				isPlayingTrumpet = false;
 				publicVariable "isPlayingTrumpet";
 			};
-		}, nil ,1.5, true, true, "", "true", 2, false, "", ""];
+		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 	};
 } forEach _allFlags;
 
