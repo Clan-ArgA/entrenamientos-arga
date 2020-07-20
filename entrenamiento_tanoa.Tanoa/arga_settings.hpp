@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Mapa de Entrenamiento ArgA Tanoa"
-#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Tanoa 6.1"
+#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Tanoa 6.2"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 

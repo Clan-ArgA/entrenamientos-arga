@@ -7,7 +7,9 @@ params [["_allFlags", []]];
 {
 	private _type = _x getVariable ["MANDI_FLAG_TYPE", "None"];
 	if (_type == "ARG") then {
-		_x setFlagTexture "imgs\bandera.paa";
+		if(local _x) then {
+			_x setFlagTexture "imgs\bandera.paa";
+		};
 		_x addAction ["<t color='#819FF7'>Himno</t> <t color='#FFFFFF'>nacional</t> <t color='#819FF7'>argentino</t>", {
 			params ["_target", "_caller", "_actionId", "_arguments"];
 			if (!isPlayingAnthem) then {
@@ -22,7 +24,9 @@ params [["_allFlags", []]];
 		}];
 	};
 	if (_type == "ARGA") then {
-		_x setFlagTexture "imgs\arga.paa";
+		if(local _x) then {
+			_x setFlagTexture "imgs\arga.paa";
+		};
 		_x addAction ["<t color='#4aba7b'>Tocar trompeta</t>", {
 			params ["_target", "_caller", "_actionId", "_arguments"];
 			if (!isPlayingTrumpet) then {
@@ -38,6 +42,17 @@ params [["_allFlags", []]];
 	};
 } forEach _allFlags;
 
+if (!isNil "bandera_arga") then {
+	bandera_arga addAction ["<t color='#eb9534'>Mostrar Escenario</t>", {
+		params ["_target", "_caller", "_actionId", "_arguments"];
+		[true, "scripts\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+	}];
+
+	bandera_arga addAction ["<t color='#e8eb34'>Ocultar Escenario</t>", {
+		params ["_target", "_caller", "_actionId", "_arguments"];
+		[false, "scripts\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+	}];
+};
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/

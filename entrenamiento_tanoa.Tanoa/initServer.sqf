@@ -56,7 +56,7 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_objs_server.sqf";
 
-if (isDedicated) then {
+if (call MIV_fnc_isLogSystemEnabled) then {
   execVM "scripts\db\init_log_system.sqf";
 };
 
