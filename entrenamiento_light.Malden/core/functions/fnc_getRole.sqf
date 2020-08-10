@@ -15,8 +15,9 @@ if (typeName _role != "SCALAR") then {
         private ["_description"];
         _description = ((toLower roleDescription _unit) splitString "@") select 0;
         if (!isNil "_description") then {
-            _description = [_unit, _description] call MIV_fnc_parseRole;
-            _role   =   [_description,_roleList] call MIV_fnc_getRoleCode;
+            _description =    [_unit, _description] call MIV_fnc_parseRole;
+            _role        = [_description,_roleList] call MIV_fnc_getRoleCode;
+            _role        =                    _role call MIV_fnc_removeAccentMark;
             if (_role != "") then{
                 _unit setVariable ["MANDI_ROL", _role];
             };
@@ -42,7 +43,7 @@ _role;
  Si el tag #nc esta presente, quitarlo de la string de comparación. (_description)
  (checkear que el tag pueda estar al principio, final, medio, cualquier lado. y quitarlo bien.)
 
- Detectar esta variable (con default False) en la funcion que setea el rol y actuar como corresponda.
+ Detectar esta variable (con default false) en la funcion que setea el rol y actuar como corresponda.
 */
 
 /*

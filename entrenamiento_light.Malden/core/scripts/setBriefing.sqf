@@ -1,10 +1,6 @@
 ﻿/*******************************************************************************
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
-private _enableBriefing =  getMissionConfigValue ["ACTIVAR_BRIEFING", 1] == 1;
-
-if (!_enableBriefing) exitWith { };
-
 private _mode = getMissionConfigValue ["CARACTER", "No oficial"];
 private _time = getMissionConfigValue ["HORARIO", ""];
 private _date = getMissionConfigValue ["FECHA", ""];
