@@ -56,7 +56,7 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 ACTIVAR_BRIEFING = 0;
-CARACTER = "No Oficial";
+CARACTER = "entrenamiento";
 HORARIO = "";
 FECHA = "";
 CLIMA = "";
