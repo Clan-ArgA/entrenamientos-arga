@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Entrenamiento ArgA Tanoa"
-#define COMPLETE_NAME "Entrenamiento ArgA Tanoa 6.4"
+#define COMPLETE_NAME "Entrenamiento ArgA Tanoa 6.5"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 

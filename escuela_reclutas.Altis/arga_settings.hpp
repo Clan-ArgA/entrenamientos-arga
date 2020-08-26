@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Campo para Reclutas ArgA"
-#define COMPLETE_NAME "Campo para Reclutas ArgA 1.6"
+#define COMPLETE_NAME "Campo para Reclutas ArgA 1.7"
 #define IMAGE "imgs\portada.jpg"
 #define DESCRIPTION "Sección Reclutas"
 
