@@ -10,7 +10,7 @@ private ["_query", "_values"];
 
 _query = "INSERT INTO log (`log_type_id`, `mission_name`, `mission_time`, `server_name`,`json_info`) VALUES";
 
-private _json_info = '';
+private _json_info = '{}';
 if (_missionState == 'mission_begin') then {
 	_json_info = call compile preprocessFileLineNumbers 'core\scripts\db\get_missions_values.sqf' ;
 };
