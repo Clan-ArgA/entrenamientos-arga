@@ -2,9 +2,6 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-removeGoggles player;
-player setVariable["Saved_Loadout", getUnitLoadout player];
-
 call compile preprocessFile "core\events\initPlayerLocal.sqf";
   
 private _curatorWhiteList = parseSimpleArray getMissionConfigValue ["CURATOR_WHITELIST", "[]"];
