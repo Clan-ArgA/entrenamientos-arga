@@ -15,12 +15,15 @@ if (typeName _role != "SCALAR") then {
         private ["_description"];
         _description = ((toLower roleDescription _unit) splitString "@") select 0;
         if (!isNil "_description") then {
-            _description =    [_unit, _description] call MIV_fnc_parseRole;
-            _role        = [_description,_roleList] call MIV_fnc_getRoleCode;
-            _role        =                    _role call MIV_fnc_removeAccentMark;
-            if (_role != "") then{
+            _description = [_unit, _description] call MIV_fnc_parseRole;
+            _role        = [_description, _roleList] call MIV_fnc_getRoleCode;
+            _role        =  _role call MIV_fnc_removeAccentMark;
+            if (isNil "_role") exitWith { "_role is nil" call MIV_fnc_log; "" };
+            if (typeName _role != "STRING") exitWith { ["ROLE:", _role, "UNIT:",_unit] call MIV_fnc_log; "" };
+            if (_role != "") then {
                 _unit setVariable ["MANDI_ROL", _role];
             };
+            if (count(_role) == 0) then {_role = "desconocido"};
         };
     };
 };
@@ -31,19 +34,10 @@ _role;
                             Realizado por |ArgA|MIV
 *******************************************************************************/
 
+//["GR Rol :", _role] call MIV_fnc_log;
 /*{
     ["_roleList 1:", _x] call MIV_fnc_log;
 } forEach _roleList;
-*/
-
-/*
- Detectar si en roleDescription esta el tag #nc, segun el resultado, setear
- el atributo MIV_NO_CHANGE al valor correspondiente en la unidad.
-
- Si el tag #nc esta presente, quitarlo de la string de comparación. (_description)
- (checkear que el tag pueda estar al principio, final, medio, cualquier lado. y quitarlo bien.)
-
- Detectar esta variable (con default false) en la funcion que setea el rol y actuar como corresponda.
 */
 
 /*
