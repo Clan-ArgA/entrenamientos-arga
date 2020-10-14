@@ -24,6 +24,7 @@ _unit addWeapon "ACE_VMH3";
 _unit addMagazine "Laserbatteries";
 _unit addWeapon "Laserdesignator_02";
 
+<<<<<<< HEAD
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
@@ -37,7 +38,10 @@ _unit addItemToUniform "ACE_EarPlugs";
 _unit addItemToUniform "ACE_Flashlight_MX991";
 _unit addItemToUniform "ACE_M26_Clacker";
 _unit addItemToVest "MineDetector";
+=======
+>>>>>>> d069419d378ba1a4b26f561d0b763f8cce7eb035
 _unit addItemToVest "ACE_SpraypaintRed";
+_unit addItemToVest "ACE_EntrenchingTool";
 for "_i" from 1 to 4 do {_unit addItemToVest "ACE_20Rnd_762x51_M993_AP_Mag";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellBlue";};
 for "_i" from 1 to 2 do {_unit addItemToVest "20Rnd_762x51_Mag";};

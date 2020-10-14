@@ -27,6 +27,9 @@ INSIGNIA_IR = 0;                                    // establece si las insignia
 CAMPO_CORRER = 0;
 ESCENARIO = 0;
 
+COLOCAR_GPS = 1;                                    // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
+ACTIVAR_SETUP_PERSONALIZADO_RADIOS = 1;             // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado
+
 /* 
 EQUIPAMIENTO
     Camuflajes disponibles:          Tipos disponibles:
@@ -92,6 +95,7 @@ overviewPicture = IMAGE;                    // Imagen en seleccion de mision
 loadScreen = IMAGE;                         // Imagen en carga
 ////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 /* Log system */
 DEBUG = 1;                                          // Habilita el modo debug
 ENABLE_LOG_SYSTEM = 1;                              // Habilita el sistema de log
@@ -106,6 +110,8 @@ BOX_ROLE_LIST = ["Ametrallador M240","Ametrallador M249","Capitan","Enfermero","
 CURATOR_WHITELIST = ["|ArgA|Axel|", "|ArgA|Shaggy|", "|Sgt", "|Cpt", "|Tte", "|Cmd"];
 ////////////////////////////////////////////////////////////////////////////////
 
+=======
+>>>>>>> d069419d378ba1a4b26f561d0b763f8cce7eb035
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/

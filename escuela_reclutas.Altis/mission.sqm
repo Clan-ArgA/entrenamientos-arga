@@ -39265,6 +39265,7 @@ class Mission
 			};
 			id=1126;
 			type="Flag_White_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item1103
 		{

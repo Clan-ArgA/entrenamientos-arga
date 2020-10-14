@@ -19,6 +19,7 @@ _unit addPrimaryWeaponItem "acfaa_20Rndfal_762x51";
 _unit addWeapon "rhsusf_weap_m9";
 _unit addHandgunItem "rhsusf_mag_15Rnd_9x19_JHP";
 
+<<<<<<< HEAD
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_tourniquet";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "adv_aceSplint_splint";};
 for "_i" from 1 to 7 do {_unit addItemToUniform "ACE_packingBandage";};
@@ -37,9 +38,13 @@ _unit linkItem "ItemWatch";
 
 for "_i" from 1 to 7 do {_unit addItemToVest "rhsusf_20Rnd_762x51_m993_Mag";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellBlue";};
+=======
+for "_i" from 1 to 6 do {_unit addItemToVest "rhsusf_20Rnd_762x51_m993_Mag";};
+for "_i" from 1 to 6 do {_unit addItemToVest "SmokeShellBlue";};
+>>>>>>> d069419d378ba1a4b26f561d0b763f8cce7eb035
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
 for "_i" from 1 to 9 do {_unit addItemToBackpack "rhsusf_20Rnd_762x51_m993_Mag";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "SmokeShellBlue";};
 
 /*******************************************************************************
                           Realizado por |ArgA|Ignacio

@@ -12,6 +12,7 @@ private _enableArtilleryComputer = getMissionConfigValue ["ACTIVAR_COMPUTADORA_A
 private _enablestealthCoef       = getMissionConfigValue ["ACTIVAR_COEFICIENTES_CAMUFLAJE",  0] == 1;
 private _hearingCoef             = getMissionConfigValue ["COEFICIENTE_AUDICION", 1];
 private _camouflageCoef          = getMissionConfigValue ["COEFICIENTE_CAMUFLAJE", 1];
+private _enableAcreSetup         = getMissionConfigValue ["ACTIVAR_SETUP_PERSONALIZADO_RADIOS",  1] == 1;
 
 setTerrainGrid 25;
 
@@ -22,7 +23,7 @@ if (hasInterface) then {
   execVM "core\scripts\init_intro.sqf";
   execVM "core\scripts\setBriefing.sqf";
   call MIV_fnc_setInsignia;
-  removeGoggles player; //arga_rhs_pm_negro
+  removeGoggles player;
   if(_initialGoggles != "") then {
     player addGoggles _initialGoggles;
   };
@@ -78,8 +79,14 @@ if (_enablestealthCoef) then {
   player setUnitTrait ["camouflageCoef  ",_camouflageCoef];
 };
 
+<<<<<<< HEAD
 // player enableSimulationGlobal true;
 // player hideObjectGlobal false;
+=======
+if (_enableAcreSetup) then {
+  execVM "core\scripts\setup_ACRE2_displays.sqf";
+};
+>>>>>>> d069419d378ba1a4b26f561d0b763f8cce7eb035
 
 /*******************************************************************************
                              Realizado por |ArgA|MIV

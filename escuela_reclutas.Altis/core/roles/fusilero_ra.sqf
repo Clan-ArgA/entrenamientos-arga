@@ -19,6 +19,7 @@ _unit addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 _unit addWeapon "rhsusf_weap_glock17g4";
 _unit addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
 
+<<<<<<< HEAD
 for "_i" from 1 to 8 do {_unit addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 8 do {_unit addItemToUniform "ACE_elasticBandage";};
 _unit addItemToUniform "ACE_EarPlugs";
@@ -32,11 +33,15 @@ _unit addItemToUniform "ACE_MapTools";
 for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_tourniquet";};
 _unit addItemToUniform "ACE_IR_Strobe_Item";
 _unit addItemToVest "ACE_DAGR";
+=======
+//_unit addItemToVest "ACE_DAGR";
+>>>>>>> d069419d378ba1a4b26f561d0b763f8cce7eb035
 for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShellBlue";};
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";};
 for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 for "_i" from 1 to 6 do {_unit addItemToBackpack "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
