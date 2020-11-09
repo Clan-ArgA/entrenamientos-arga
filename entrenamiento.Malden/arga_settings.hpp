@@ -29,8 +29,8 @@ TIPO_VN = "ACE_NVG_Wide";                           // Tipo de la visión noctur
 INSIGNIA_AUTOMATICA = 1;                            // 1: Añade insignias por pelotón o médicas, 0: No Añade.
 INSIGNIA_IR = 0;                                    // 1: Coloca insignias IR, 2: Insignias normales.
 
-CAMPO_CORRER = 1;
-ESCENARIO = 1;
+CAMPO_CORRER = 0;
+ESCENARIO = 0;
 
 /* 
 EQUIPAMIENTO
