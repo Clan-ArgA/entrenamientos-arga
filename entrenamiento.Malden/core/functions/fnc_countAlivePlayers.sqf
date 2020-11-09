@@ -2,13 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-// class Extended_InitPost_EventHandlers {
-//     class CAManBase {
-//         class initpost_units {
-//             init = "_this call compile preprocessFileLineNumbers 'core\scripts\init_man.sqf'";
-//         };
-//     };
-// };
+private _headlessClients = entities "HeadlessClient_F"; 
+private _aliveHumanPlayers = (allPlayers select {alive _x}) - _headlessClients;
+
+count _aliveHumanPlayers
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

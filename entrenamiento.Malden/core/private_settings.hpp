@@ -2,12 +2,15 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-TEMPLATE_VERSION = "0.9.4";
+TEMPLATE_VERSION     = "0.9.11";
+TEMPLATE_LAST_UPDATE = "09-11-2020";
 
 /* Log system */
-DEBUG = 1;                                          // Habilita el modo debug
-ENABLE_LOG_SYSTEM = 1;                              // Habilita el sistema de log
-ENABLE_LOG_SYSTEM_ONLY_DEDICATED = 1;               // Habilita el sistema de log sólo si el servidor es dedicado (requiere ENABLE_LOG_SYSTEM = 1)
+DEBUG = 1;                                          // 1: Habilita el modo debug, 0: Desabilita.
+LOG_SYSTEM = 1;                                     // 1: Habilita el sistema de log, 0: Desabilita.
+LOG_SYSTEM_ONLY_DEDICATED = 1;                      // 1: Habilita el sistema de log sólo si el servidor es dedicado (requiere LOG_SYSTEM = 1), 0: Desabilita.
+FPS_MAP = 1;                                        // 1: Muestra fps en mapa del servidor y los headless client, 0: Desabilita.
+FPS_LOG = 1;                                        // 1: Habilita loguear fps en rpts del servidor y los headless client, 0: Desabilita.
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Listas auxiliares */
@@ -17,7 +20,7 @@ ARGA_PLATOON_LIST = [["condor",["condor","cóndor"]],["yaguar",["yaguar","yaguar
 
 AVAILABLE_INSIGNIA_TYPES = ["arga","condor","yaguar","medico"];
 
-BOX_ROLE_LIST = ["Ametrallador M240","Ametrallador M249","Capitán","Enfermero","Francotirador","Fusilero","Fusilero RA","Granadero","Granadero c/Bengalas","Ingeniero","Lanzador AA","Lanzador AT","Líder","Líder Pelotón","Líder Escuadra","Líder Escuadra 1","Líder Escuadra 2","Líder Escuadra 3","Médico","Médico de Combate","Observador","Piloto","Radio Operador","Teniente","Tirador FAL","Tirador MK11"];
+BOX_ROLE_LIST = ["Capitán","Teniente","Líder","Sub Líder","Líder Pelotón","Líder Escuadra","Líder Escuadra 1","Líder Escuadra 2","Líder Escuadra 3","Ametrallador M240","Ametrallador M249","Francotirador","Fusilero","Fusilero RA","Granadero","Granadero c/Bengalas","Ingeniero","Lanzador AA","Lanzador AT","Observador","Piloto","Radio Operador","Tirador FAL","Tirador MK11","Médico","Médico de Combate","Enfermero"];
 
 RADIO_CHANNEL_NAME  = [["ACRE_PRC152",[[4, "AEREO"],[5, "INTERNA MANDO"],[6, "COMANDANCIA"],[7, "CONDOR"],[8, "YAGUARETE"],[9, "CONVOY"],[10, "MEDICOS"]]],["ACRE_PRC117F",[[4, "AEREO"],[5, "INTERNA MANDO"],[6, "COMANDANCIA"],[7, "CONDOR"],[8, "YAGUARETE"],[9, "CONVOY"],[10, "MEDICOS"]]]];
 FIXED_CHANNEL_NAME  = ["AEREO","INTERNA MANDO","COMANDANCIA","CONVOY","MEDICOS"];
@@ -31,6 +34,6 @@ ROLES_NEEDING_PLATOON = ["lider_peloton","lider_escuadra_1","lider_escuadra_2","
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-// No Borrar
-// STAFF_ROLE = [["Nico","Lanzador AT"],["Jhon","Ametrallador"],["Cero","Tirador fal"],["Camello","Lanzador AT"],["Maxi","Ametrallador"],["Choqqo","Ingeniero"],["Ignacio","Ametrallador"],["Paco","Granadero"],["Zorro","Granadero"],["Maxtor","Ametrallador"],["Vultur","Granadero"],["Veck","Ingeniero"],["Ranquel","Médico"],["Labrador","Médico"],["Locofer","Ingeniero"],["Lince","Ametrallador"],["Joaco","Tirador fal"],["Shaggy","Granadero"],["Timor","Ingeniero"],["Axel","Ametrallador"],["Night","Médico"],["Heiz","Ametrallador"],["Guille","Tirador fal"],["Rodo","Ingeniero"],["Vigua","Ametrallador"],["Roke","Lanzador AT"],["Jaairo","Tirador fal"],["Kalam","Ingeniero"],["Fix","Lanzador AT"],["Juani","Ametrallador"],["Huaiqui","Granadero"],["Matias","Ingeniero"],["Soda","Ingeniero"],["Tinga","Ingeniero"],["Akin","Ingeniero"]];
-////////////////////////////////////////////////////////////////////////////////
+/*
+    TODO: ESCRIBIR LOS TODO 
+*/
