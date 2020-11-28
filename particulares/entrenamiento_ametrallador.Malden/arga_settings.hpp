@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Entrenamiento Ametrallador"
-#define COMPLETE_NAME "Entrenamiento Ametrallador V1"
+#define NAME "Entrenamiento Ametrallador V2"
+#define COMPLETE_NAME "Entrenamiento Ametrallador V2"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
