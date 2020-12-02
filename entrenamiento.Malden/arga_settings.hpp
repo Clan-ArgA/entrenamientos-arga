@@ -8,6 +8,7 @@
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
 author = "Maxi e Ignacio";
+AUTHOR_UID = ["76561198091139370", "76561198026915573"];
 IMG_LOGO = "imgs\logo.paa";
 COLOR_AUTOR = "#76a8f7";
 ES_CAMPANIA = 0;
@@ -26,8 +27,11 @@ GPS = 1;                                            // 1: Agrega GPS vanilla en 
 VISION_NOCTURNA = 0;                                // 1: Agrega visión nocturna panorámica en rol automático o caja, 0: Remueve.
 TIPO_VN = "ACE_NVG_Wide";                           // Tipo de la visión nocturna que se va a agregar en rol automático o caja.
 
+HALO = 0;                                           // 1: Guarda en contenido de la mochila y pone un paracaidas en la unidad al inicio de la misión. Al tocar tierra se vuelve a poner la mochila automáticamente. 0: Desactiva
+HALO_ALTURA_MINIMA_ACTIVACION = 1000;               // Altura en metros mínima que se le pone un paracaidas si HALO esta activado. Todas las unidades por debajo de esa altura no reciben paracaidas al inicio
 INSIGNIA_AUTOMATICA = 1;                            // 1: Añade insignias por pelotón o médicas, 0: No Añade.
 INSIGNIA_IR = 0;                                    // 1: Coloca insignias IR, 2: Insignias normales.
+SETUP_PERSONALIZADO_RADIOS = 1;                     // 1: Activa el setup de las radios de ACRE2, 0: Desactiva.
 
 CAMPO_CORRER = 0;
 ESCENARIO = 0;
