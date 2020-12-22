@@ -2,6 +2,8 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
+private _stage = getMissionConfigValue ["ESCENARIO", 0] == 1;
+
 params [["_allFlags", []]];
 
 {
@@ -35,20 +37,21 @@ params [["_allFlags", []]];
 				publicVariable "isPlayingTrumpet";
 			};
 		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
+
+		if(_stage) exitWith {
+			_x addAction ["<t color='#eb9534'>Mostrar Escenario</t>", {
+				params ["_target", "_caller", "_actionId", "_arguments"];
+				[true, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+			}];
+
+			_x addAction ["<t color='#e8eb34'>Ocultar Escenario</t>", {
+				params ["_target", "_caller", "_actionId", "_arguments"];
+				[false, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+			}];
+		};
 	};
 } forEach _allFlags;
 
-if (!isNil "bandera_arga") then {
-	bandera_arga addAction ["<t color='#eb9534'>Mostrar Escenario</t>", {
-		params ["_target", "_caller", "_actionId", "_arguments"];
-		[true, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
-	}];
-
-	bandera_arga addAction ["<t color='#e8eb34'>Ocultar Escenario</t>", {
-		params ["_target", "_caller", "_actionId", "_arguments"];
-		[false, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
-	}];
-};
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/
