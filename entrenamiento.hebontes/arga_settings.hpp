@@ -34,7 +34,7 @@ INSIGNIA_IR = 0;                                    // 1: Coloca insignias IR, 2
 SETUP_PERSONALIZADO_RADIOS = 1;                     // 1: Activa el setup de las radios de ACRE2, 0: Desactiva.
 
 CAMPO_CORRER = 0;
-ESCENARIO = 0;
+ESCENARIO = 1;
 
 /* 
 EQUIPAMIENTO
