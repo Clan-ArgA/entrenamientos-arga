@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=72;
+		nextID=79;
 	};
 	class Camera
 	{
-		pos[]={5694.916,41.007126,1268.485};
-		dir[]={0.64580697,-0.5822919,-0.49403429};
-		up[]={0.46253669,0.81293267,-0.35383397};
-		aside[]={-0.60764819,1.8431456e-007,-0.79433256};
+		pos[]={5626.499,30.449028,1420.3733};
+		dir[]={0.54510713,-0.60223281,-0.58342284};
+		up[]={0.41119081,0.79827279,-0.44009262};
+		aside[]={-0.73076558,2.2165477e-007,-0.68277967};
 	};
 };
 binarizationWanted=0;
@@ -584,229 +584,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ENH_dynamicSkill";
-			expression="if (!is3DEN && {_value # 0 && {isServer}}) then			{				_value params				[					'_enable',					'_skillMinBLUFOR',					'_skillAimMinBLUFOR',					'_skillMaxBLUFOR',					'_skillAimMaxBlUFOR',					'_skillMinOPFOR',					'_skillAimMinOPFOR',					'_skillMaxOPFOR',					'_skillAimMaxOPFOR',					'_skillMinINDFOR',					'_skillAimMinINDFOR',					'_skillMaxINDFOR',					'_skillAimMaxINDFOR'				];				[					true,					[						[WEST,_skillMinBLUFOR,_skillAimMinBLUFOR,_skillMaxBLUFOR,_skillAimMaxBlUFOR],						[EAST,_skillMinOPFOR,_skillAimMinOPFOR,_skillMaxOPFOR,_skillAimMaxOPFOR],						[INDEPENDENT,_skillMinINDFOR,_skillAimMinINDFOR,_skillMaxINDFOR,_skillAimMaxINDFOR]					]				] call BIS_fnc_EXP_camp_dynamicAISkill;			}";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-					class value
-					{
-						items=13;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item4
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item5
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item6
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item7
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item8
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item9
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-						class Item10
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.80000001;
-							};
-						};
-						class Item11
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.30000001;
-							};
-						};
-						class Item12
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.5;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="ENH_saveLoadout";
-			expression="      if (!is3DEN && {hasInterface && {_value && {isMultiplayer}}}) then      {         [] spawn         {            waitUntil {sleep 1; !isNull player};            player setVariable ['ENH_savedLoadout',getUnitloadout player];            player addEventHandler ['Respawn',{player setUnitLoadout (player getVariable 'ENH_savedLoadout')}];         };      };   ";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute2
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -823,7 +600,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=3;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -31559,7 +31336,7 @@ class Mission
 							};
 							id=1059;
 							type="Land_CampingChair_V2_F";
-							atlOffset=0.0080000162;
+							atlOffset=0.0080001354;
 							class CustomAttributes
 							{
 								class Attribute0
