@@ -2,12 +2,12 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Entrenamiento ArgA"
-#define COMPLETE_NAME "Entrenamiento ArgA 7.4"
+#define NAME "Acto Conmemorativo a los Veteranos y Caídos de la Guerra de Malvinas"
+#define COMPLETE_NAME "Acto Conmemorativo a los Veteranos y Caídos de la Guerra de Malvinas 7.5"
 #define IMAGE "imgs\portada.paa"
-#define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
+#define DESCRIPTION "Acto Conmemorativo a los Veteranos y Caídos de la Guerra de Malvinas"
 
-author = "Maxi e Ignacio";
+author = "ArgA";
 AUTHOR_UID = ["76561198091139370", "76561198026915573"];
 IMG_LOGO = "imgs\logo.paa";
 COLOR_AUTOR = "#76a8f7";

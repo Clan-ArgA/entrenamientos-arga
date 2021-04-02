@@ -39,14 +39,15 @@ params [["_allFlags", []]];
 		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 
 		if(_stage) exitWith {
-			_x addAction ["<t color='#eb9534'>Mostrar plaza</t>", {
-				params ["_target", "_caller", "_actionId", "_arguments"];
-				[true, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
-			}];
-
-			_x addAction ["<t color='#e8eb34'>Ocultar plaza</t>", {
+			
+			_x addAction ["<t color='#e8eb34'>Mostrar plaza</t>", {
 				params ["_target", "_caller", "_actionId", "_arguments"];
 				[false, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+			}];
+			
+			_x addAction ["<t color='#eb9534'>Ocultar plaza</t>", {
+				params ["_target", "_caller", "_actionId", "_arguments"];
+				[true, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
 			}];
 		};
 	};
