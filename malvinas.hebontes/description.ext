@@ -12,7 +12,21 @@ class CfgFunctions {
 
 class CfgSounds {
 	sounds[] = {};
-  #include "core\sounds_entrenamiento.hpp"
+
+  class MANDI_TRUMPET
+  {
+    name = "MANDI_TRUMPET";
+    sound[] = {"sounds\marcha_malvinas.ogg", 1, 1};
+    titles[] = {};
+  };
+
+  class MANDI_ANTHEM
+  {
+    name = "MANDI_ANTHEM";
+    sound[] = {"sounds\himno_argentino_nacional.ogg", 1, 1};
+    titles[] = {};
+  };
+
 };
 
 #include "core\post_description.hpp"

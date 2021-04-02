@@ -25,7 +25,7 @@ params [["_allFlags", []]];
 	};
 	if (_type == "ARGA") then {
 		_x forceFlagTexture "imgs\arga.paa";
-		_x addAction ["<t color='#4aba7b'>Tocar trompeta</t>", {
+		_x addAction ["<t color='#4aba7b'>Marcha de malvinas</t>", {
 			params ["_target", "_caller", "_actionId", "_arguments"];
 			if (!isPlayingTrumpet) then {
 				[speaker_l, ["MANDI_TRUMPET", 500]] remoteExec ["say3D", 0];
@@ -39,12 +39,12 @@ params [["_allFlags", []]];
 		}, nil , 1.5, true, true, "", "true", 5, false, "", ""];
 
 		if(_stage) exitWith {
-			_x addAction ["<t color='#eb9534'>Mostrar Escenario</t>", {
+			_x addAction ["<t color='#eb9534'>Mostrar plaza</t>", {
 				params ["_target", "_caller", "_actionId", "_arguments"];
 				[true, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
 			}];
 
-			_x addAction ["<t color='#e8eb34'>Ocultar Escenario</t>", {
+			_x addAction ["<t color='#e8eb34'>Ocultar plaza</t>", {
 				params ["_target", "_caller", "_actionId", "_arguments"];
 				[false, "core\scripts_entrenamiento\show_escenario.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
 			}];
