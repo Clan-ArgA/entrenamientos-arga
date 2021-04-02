@@ -4,7 +4,7 @@
 
 #define NAME "Acto Conmemorativo Malvinas"
 #define COMPLETE_NAME "Acto Conmemorativo a los Veteranos y Caídos de la Guerra de Malvinas 7.5"
-#define IMAGE "imgs\portada.paa"
+#define IMAGE "imgs\2.jpg"
 #define DESCRIPTION "Acto Conmemorativo a los Veteranos y Caídos de la Guerra de Malvinas"
 
 author = "ArgA";
