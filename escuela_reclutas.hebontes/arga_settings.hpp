@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Escuela de reclutas ArgA"
-#define COMPLETE_NAME "escuela de reclutas ArgA V1.4"
+#define COMPLETE_NAME "escuela de reclutas ArgA V1.5"
 #define IMAGE "imgs\bandera2.jpg"
 #define DESCRIPTION "Escuela Militar Oscar Poltronieri Seccion Reclutas"
 
