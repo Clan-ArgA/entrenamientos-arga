@@ -3,12 +3,15 @@
 *******************************************************************************/
 
 #define NAME "Entrenamiento ArgA"
-#define COMPLETE_NAME "Entrenamiento ArgA 7.4"
+#define COMPLETE_NAME "Entrenamiento ArgA 7.5"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
+CARACTER = "Entrenamiento";
+
 author = "Maxi e Ignacio";
 AUTHOR_UID = ["76561198091139370", "76561198026915573"];
+
 IMG_LOGO = "imgs\logo.paa";
 COLOR_AUTOR = "#76a8f7";
 ES_CAMPANIA = 0;
@@ -33,8 +36,35 @@ INSIGNIA_AUTOMATICA = 1;                            // 1: Añade insignias por p
 INSIGNIA_IR = 0;                                    // 1: Coloca insignias IR, 2: Insignias normales.
 SETUP_PERSONALIZADO_RADIOS = 1;                     // 1: Activa el setup de las radios de ACRE2, 0: Desactiva.
 
+/*
+    ENTRENAMIENTO ESPECIFICOS
+*/
 CAMPO_CORRER = 0;
 ESCENARIO = 1;
+
+/*
+     Temas correción de color: (Colocar entre las comillas)
+
+     - Realista
+     - Apocalipsis
+     - Nightstalkers
+     - OFP_Gamma
+     - Otoño_Dorado
+     - Africa
+     - Afghan
+     - Medio_Oriente
+     - Realidad_Marrón
+     - Escala_Grises
+     - Frío
+     - Apocalipsis
+     - Invierno_Azul
+     - Invierno_Blanco
+     - Mediterraneo
+     - Post_Soviético
+     - Blanco_Negro
+*/
+CORRECION_COLOR = 0;                                // 1: Activa la correción de color, 0: Desactiva.
+TEMA_CORRECCION_COLOR = "Nightstalkers";
 
 /* 
 EQUIPAMIENTO
@@ -65,7 +95,6 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 BRIEFING = 0;
-CARACTER = "entrenamiento";
 HORARIO = "";
 FECHA = "";
 CLIMA = "";
