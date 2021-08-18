@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Entrenamiento ArgA Altis"
-#define COMPLETE_NAME "Entrenamiento ArgA Altis 1.1"
+#define COMPLETE_NAME "Entrenamiento ArgA Altis 1.5"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
