@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=28;
+		nextID=37;
 	};
 	class Camera
 	{
-		pos[]={14561.445,61.900093,16695.068};
-		dir[]={0.34652185,-0.80050325,0.48918459};
-		up[]={0.46274811,0.59924078,0.65326917};
-		aside[]={0.81608999,2.1181768e-007,-0.57809108};
+		pos[]={14716.228,57.426052,16676.258};
+		dir[]={-0.47957486,-0.75235599,0.45185012};
+		up[]={-0.54765147,0.65865737,0.51598442};
+		aside[]={0.68582851,-2.7893111e-007,0.72790867};
 	};
 };
 binarizationWanted=0;
@@ -36920,13 +36920,14 @@ class Mission
 										angles[]={0,0.78495455,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										createAsSimpleObject=1;
 									};
 									id=1056;
 									type="Land_Defibrillator_F";
-									atlOffset=0.81107903;
+									atlOffset=0.068307877;
 								};
 								class Item227
 								{
