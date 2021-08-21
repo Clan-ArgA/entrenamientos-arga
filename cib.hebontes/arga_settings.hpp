@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "CIB Practico 2021"
-#define COMPLETE_NAME "CIB Practico 2021 1.0"
+#define COMPLETE_NAME "CIB Practico 2021 3.0"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
