@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=763;
+		nextID=772;
 	};
 	class Camera
 	{
@@ -31,7 +31,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="ESC_SEC_RECLUTAS_2023_V3";
+sourceName="esc_sec_reclutas_2023_v3";
 addons[]=
 {
 	"A3_Structures_F_Enoch_Infrastructure_Roads",
@@ -64302,7 +64302,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2785.4609,35.631905,7408.2881};
-			angle=3.171525;
+			angle=3.1715248;
 			class Attributes
 			{
 				condition="runa inarea thistrigger";
