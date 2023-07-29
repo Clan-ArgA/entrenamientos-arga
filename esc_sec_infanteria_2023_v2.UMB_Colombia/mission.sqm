@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=775;
+		nextID=787;
 	};
 	class Camera
 	{
@@ -31,7 +31,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="esc_sec_infanteria_2023_V1";
+sourceName="esc_sec_infanteria_2023_v2";
 addons[]=
 {
 	"A3_Structures_F_Enoch_Infrastructure_Roads",

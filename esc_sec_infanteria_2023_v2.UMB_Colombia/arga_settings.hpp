@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Escuela Seccion de Infanteria 2023"
-#define COMPLETE_NAME "Escuela Seccion de Infanteria 2023 V1"
+#define COMPLETE_NAME "Escuela Seccion de Infanteria 2023 V2"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela Oscar Poltronieri"
 

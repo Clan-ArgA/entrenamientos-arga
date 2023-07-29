@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Escuela Seccion de Reclutas 2023"
-#define COMPLETE_NAME "Escuela Seccion de Reclutas 2023 V3"
+#define COMPLETE_NAME "Escuela Seccion de Reclutas 2023 V4"
 #define IMAGE "imgs\bandera2.jpg"
 #define DESCRIPTION "Escuela Oscar Poltronieri"
 
