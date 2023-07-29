@@ -9,7 +9,7 @@ TEMPLATE_LAST_UPDATE = "2023-6-29";                  // Escribir la fecha en for
 DEBUG = 1;                                          // 1: Habilita el modo debug, 0: Deshabilita.
 LOG_SYSTEM = 1;                                     // 1: Habilita el sistema de log, 0: Deshabilita.
 LOG_SYSTEM_ONLY_DEDICATED = 1;                      // 1: Habilita el sistema de log sólo si el servidor es dedicado (requiere LOG_SYSTEM = 1), 0: Deshabilita.
-PLAYERS_LOG = 0;                                    // 1: Habilita el log de los jugadores (deshabilitar solo para persistentes). 0: Deshabilita 
+PLAYERS_LOG = 1;                                    // 1: Habilita el log de los jugadores (deshabilitar solo para persistentes). 0: Deshabilita 
 FPS_MAP = 0;                                        // 1: Muestra fps en mapa del servidor y los headless client, 0: Deshabilita.
 FPS_LOG = 0;                                        // 1: Habilita loguear fps en archivo rpt del servidor y los headless client, 0: Deshabilita.
 FPS_DB = 1;                                         // 1: Habilita loguear fps en la base de datos del servidor y los headless client, 0: Deshabilita.
