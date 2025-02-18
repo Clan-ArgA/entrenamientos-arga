@@ -2,15 +2,15 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Escuela Seccion de Infanteria 2023"
-#define COMPLETE_NAME "Escuela Seccion de Infanteria 2023 V1"
+#define NAME "Template basico entrenamiento"
+#define COMPLETE_NAME "Template basico entrenamiento v0.9.24"
 #define IMAGE "imgs\portada.paa"
-#define DESCRIPTION "Escuela Oscar Poltronieri"
+#define DESCRIPTION ""
 
-CARACTER = "Entrenamiento";
+CARACTER = "Entrenamiento"; // Tipos válidos: "Entrenamiento", "Entrenamiento reclutas", "Entrenamiento rol"
 
-author = "Fred - Shaggy";
-AUTHOR_UID = ["76561198030188168", "76561198969153208"];
+author = "";
+AUTHOR_UID = [];
 
 IMG_LOGO = "imgs\logoArgA.jpg";
 COLOR_AUTOR = "#76a8f7";
@@ -40,7 +40,7 @@ SETUP_PERSONALIZADO_RADIOS = 1;                     // 1: Activa el setup de las
     ENTRENAMIENTO ESPECIFICOS
 */
 CAMPO_CORRER = 0;
-ESCENARIO = 1;
+ESCENARIO = 0;
 
 /*
      Temas correción de color: (Colocar entre las comillas)
@@ -66,10 +66,10 @@ ESCENARIO = 1;
 CORRECION_COLOR = 0;                                // 1: Activa la correción de color, 0: Desactiva.
 TEMA_CORRECCION_COLOR = "Nightstalkers";
 
-/* 
+/*
 EQUIPAMIENTO
     Camuflajes disponibles:          Tipos disponibles:
-       - Bosque                        - Multicam 
+       - Bosque                        - Multicam
        - Desierto                      - Marpat
        - Selva                         - Liso
        - Negro
@@ -89,18 +89,18 @@ MOCHILA_PERSONALIZADO = "";
 MOCHILA_CHICA_PERSONALIZADO = "";
 ////////////////////////////////////////////////////////////////////////////////
 
-/* 
+/*
 BRIEFING
     Cada elemento del array es un parrafo
-    Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
+    Ejemplo: ["Primer parrafo", "Segundo parrafo"]
 */
 BRIEFING = 0;
 HORARIO = "";
 FECHA = "";
 CLIMA = "";
 UBICACION = "";
-SITUACION = [""];               
-SITUACION_HISTORICA = [""];     
+SITUACION = [""];
+SITUACION_HISTORICA = [""];
 EXTRACTO_INTELIGENCIA = [""];
 OBJETIVOS = ["", ""];
 RECURSOS = ["", ""];
