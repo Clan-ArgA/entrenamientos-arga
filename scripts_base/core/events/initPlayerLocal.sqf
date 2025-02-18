@@ -15,8 +15,9 @@ private _camouflageCoef          = getMissionConfigValue ["COEFICIENTE_CAMUFLAJE
 private _enableAcreSetup         = getMissionConfigValue ["SETUP_PERSONALIZADO_RADIOS",  1] == 1;
 private _enableHALO              = getMissionConfigValue ["HALO",  1] == 1;
 private _functionWasCalled       = [player,"core\scripts\init_intro.sqf"] call MIV_fnc_wasFuntionCalled;
-private _colorCorrection         = getMissionConfigValue ["CORRECION_COLOR",  0] == 1; 
-private _enableFlareEnhance      = getMissionConfigValue ["ACTIVAR_BENGALAS_MEJORADAS",  0] == 1; 
+private _colorCorrection         = getMissionConfigValue ["CORRECION_COLOR",  0] == 1;
+private _enableFlareEnhance      = getMissionConfigValue ["ACTIVAR_BENGALAS_MEJORADAS",  0] == 1;
+private _caracter                = getMissionConfigValue ["CARACTER",  ""];
 
 setTerrainGrid 25;
 
@@ -29,7 +30,7 @@ if (hasInterface) then {
     execVM "core\scripts\init_intro.sqf";
     [[player,"core\scripts\init_intro.sqf"],"core\functions\fnc_setFuntionCalled.sqf"] remoteExec ["BIS_fnc_execVM", 2, false];
   };
-  
+
   execVM "core\scripts\setBriefing.sqf";
   call MIV_fnc_setInsignia;
   removeGoggles player;
@@ -69,7 +70,7 @@ if (hasInterface) then {
   enableEngineArtillery (_enableArtilleryComputer);
 };
 
-// Deshabilita el movimiento de la IA para todas las IA que 
+// Deshabilita el movimiento de la IA para todas las IA que
 // esten en el mismo grupo que un jugador humano
 if(_disableGroupIA) then {
   private _units = units (group player);
@@ -106,6 +107,16 @@ if(_colorCorrection) then {
 
 if (!hasInterface and !isServer) then {
   player enableSimulation false;
+};
+
+if (_caracter in ["Oficial", "No Oficial", "Entrenamiento reclutas"]) then {
+    [missionNamespace, "ArsenalOpened", {
+        params ["_display"];
+
+        private _loadButton = _display displayCtrl 44147;
+        _loadButton ctrlEnable false;
+        _loadButton ctrlSetTooltip localize "str_disabled";
+    }] call BIS_fnc_addScriptedEventHandler;
 };
 
 /*******************************************************************************
